@@ -10,7 +10,7 @@ $(function() {
         //get value of input
 
         //call my function
-        console.log(getCoolNameFacts("barry")); 
+        console.log(getCoolNameFacts("Claire")); 
         
         let someOtherVariable; 
         //print back the result
