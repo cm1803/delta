@@ -1,23 +1,27 @@
-$(function() {
-    console.log("doc is ready");
-    let userName; 
-    $("#btnGetFacts").click(function () {
-  console.log(getCoolNameFacts("Claire")); 
-        
-        let someOtherVariable; 
-        //print back the result
+function analyzeName() {
+    var name = document.getElementById("nameInput").value;
+    var nameLength = name.length;
+    var reversedName = name.split("").reverse().join("");
 
-        let thisString = " So";
-        thisString = thisString + " very";
-        thisString += " cool.";
+    var spiritAnimal = "";
+    if (nameLength <= 3) {
+        spiritAnimal = "toad";
+    } else if (nameLength <= 5) {
+        spiritAnimal = "cat";
+    } else if (nameLength <= 7) {
+        spiritAnimal = "unicorn";
+    } else {
+        spiritAnimal = "giraffe";
+    }
 
-        $('body').append(thisString);
+    var resultText = "Your name is " + nameLength + " letters long. ";
+    resultText += "When spelled backwards, it is '" + reversedName + "'. ";
+    resultText += "Your spirit animal is a " + spiritAnimal + ".";
 
-
-    });
-  }); 
-
-function getCoolNameFacts(name) {
-    console.log('in my function');
-    $('body').append("You're a cool unicorn.");
+    document.getElementById("result").innerText = resultText;
 }
+
+document.getElementById("nameForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    analyzeName();
+});
