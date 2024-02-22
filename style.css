@@ -1,9 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body{
-background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E');
+body {
+    background-color: #FFE4B5; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
 }
 
-h1{
-  font-family: 'Roboto', sans-serif;
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FFA500; /* Orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#result {
+    margin-top: 20px;
 }
