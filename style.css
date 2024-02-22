@@ -19,7 +19,7 @@ input[type="text"] {
 
 input[type="submit"] {
     padding: 10px 20px;
-    background-color: #FFA500; /* Orange */
+    background-color: #FFA500; 
     color: white;
     border: none;
     cursor: pointer;
